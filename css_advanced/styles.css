@@ -248,57 +248,136 @@ nav ul li a {
 /* end of video list  */
 /* start of membership */
 .membership-section {
-    background-color: #1b0b27;
-    text-align: center;
-    padding: 4em 2em;
-    color: white;
-  }
-  
-  .membership-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 2em;
-  }
-  
-  .membership-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    flex-wrap: wrap;
-    margin-bottom: 2em;
-  }
-  
-  .membership-card {
-    max-width: 200px;
-  }
-  
-  .smile-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1em;
-  }
-  
-  .membership-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-  }
-  
-  .membership-card p {
-    font-size: 0.9em;
-    line-height: 1.4;
-  }
-  
-  .cta-button {
-    background-color: white;
-    color: #7910c9;
-    border: none;
-    padding: 0.8em 2em;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #e0c4ff;
-  }
+  background-color: #1b0b27;
+  text-align: center;
+  padding: 4em 2em;
+  color: white;
+}
+
+.membership-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+
+.membership-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.membership-card {
+  max-width: 200px;
+}
+
+.smile-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1em;
+}
+
+.membership-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.membership-card p {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.cta-button {
+  background-color: white;
+  color: #7910c9;
+  border: none;
+  padding: 0.8em 2em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e0c4ff;
+}
+/* end of membership  */
+/* start of FAQ  */
+.faq-section {
+  padding: 4em 2em;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  color: #333;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #004080;
+}
+
+.faq-item p {
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #555;
+}
+/* end of FAQ  */
+/* start of footer  */
+/* .footer {
+  background-color: #071629;
+  color: white;
+  padding: 2em 1em;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.social-icons i {
+  color: white;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #c271ff;
+}
+
+.footer-copy {
+  font-size: 0.9em;
+  color: #ccc;
+} */
