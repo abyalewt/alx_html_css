@@ -246,3 +246,59 @@ nav ul li a {
   color: #888;
 }
 /* end of video list  */
+/* start of membership */
+.membership-section {
+    background-color: #1b0b27;
+    text-align: center;
+    padding: 4em 2em;
+    color: white;
+  }
+  
+  .membership-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+  }
+  
+  .membership-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+  
+  .membership-card {
+    max-width: 200px;
+  }
+  
+  .smile-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+  }
+  
+  .membership-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .membership-card p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: #7910c9;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e0c4ff;
+  }
