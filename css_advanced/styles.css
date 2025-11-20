@@ -336,7 +336,7 @@ nav ul li a {
 }
 /* end of FAQ  */
 /* start of footer  */
-/* .footer {
+.footer {
   background-color: #071629;
   color: white;
   padding: 2em 1em;
@@ -380,4 +380,4 @@ nav ul li a {
 .footer-copy {
   font-size: 0.9em;
   color: #ccc;
-} */
+}
