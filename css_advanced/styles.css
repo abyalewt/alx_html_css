@@ -9,26 +9,25 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em 2em;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 2em;
 }
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2em;
-    margin: 0;
-    padding: 0;
-       
-  }
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  /* Center the entire block */
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* Center the entire block */
 .center-block {
   display: flex;
   flex-direction: column;
@@ -48,11 +47,11 @@ nav ul {
 }
 
 .center-block h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 0.5em;
-  }
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5em;
+}
 /* Style the button */
 .center-block button {
   background-color: #c271ff;
@@ -66,19 +65,19 @@ nav ul {
   transition: background-color 0.3s ease;
 }
 .center-block button:hover {
-    background-color: #e65c00;
-  }
-  /* Section wrapper */
+  background-color: #e65c00;
+}
+/* Section wrapper */
 .pros-section {
   text-align: center;
   padding: 3em 2em;
- }
- .pros-section h2 {
-    font-size: 2em;
-    margin-bottom: 1.5em;
-    color: white;
-  }
-  /* Flex container for cards */
+}
+.pros-section h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  color: white;
+}
+/* Flex container for cards */
 .pros-grid {
   display: flex;
   justify-content: center;
@@ -91,7 +90,7 @@ nav ul {
   background-color: white;
   padding: 1em;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 200px;
   text-align: center;
 }
@@ -118,56 +117,132 @@ nav ul {
 
 /* Testimonial section layout */
 .testimonial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    padding: 3em 2em;
-    background-color: #c271ff; /* your requested color */
-    flex-wrap: wrap;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 3em 2em;
+  background-color: #c271ff; /* your requested color */
+  flex-wrap: wrap;
+}
 
-  /* Image container */
-  .testimonial-image img {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  /* Text content */
+/* Image container */
+.testimonial-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* Text content */
 .testimonial-content {
   max-width: 500px;
 }
 .testimonial-content blockquote {
-    font-style: italic;
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 1em;
-  }
-  
-  .testimonial-content h3 {
-    font-size: 1.2em;
-    color: #004080;
-    margin-bottom: 0.3em;
-  }
-  
-  .testimonial-content p {
-    font-size: 0.95em;
-    color: #666;
-  }
-  
-  
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1em;
+}
 
+.testimonial-content h3 {
+  font-size: 1.2em;
+  color: #004080;
+  margin-bottom: 0.3em;
+}
 
-  
-  
-  
-  
+.testimonial-content p {
+  font-size: 0.95em;
+  color: #666;
+}
+.popular-tutorials {
+  padding: 3em 2em;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
-  
+.popular-tutorials h2 {
+  font-size: 2em;
+  margin-bottom: 2em;
+  color: #333;
+}
+.tutorial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
 
+.tutorial-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 250px;
+  padding: 1em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
 
-  
-  
-  
+.thumbnail {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+.play-icon {
+  width: 40px;
+  height: 40px;
+}
+/* Backgrounds */
+.bg1 {
+  background-image: url("./recourse/Image/9.png");
+}
+.bg2 {
+  background-image: url("./recourse/Image/6.png");
+}
+.bg3 {
+  background-image: url("./recourse/Image/8.png");
+}
+.bg4 {
+  background-image: url("./recourse/Image/7.png");
+}
+
+.tutorial-card h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  color: #004080;
+}
+
+.tutorial-card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 1em 0;
+}
+
+.author-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.stars {
+  color: #f5a623; /* Yellow stars */
+  margin-bottom: 0.5em;
+  display: flex;
+  gap: 0.2em;
+}
+
+.duration {
+  font-size: 0.85em;
+  color: #888;
+}
+/* end of video list  */
