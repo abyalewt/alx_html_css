@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-image: url("./recourse/Image/Object.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 2em;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+       
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  /* Center the entire block */
+.center-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+}
+/* Flex the span elements horizontally */
+.center-block .emotions {
+  display: flex;
+  gap: 1.5em;
+  margin: 1em 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+}
+
+.center-block h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+/* Style the button */
+.center-block button {
+  background-color: #c271ff;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.center-block button:hover {
+    background-color: #e65c00;
+  }
+  /* Section wrapper */
+.pros-section {
+  text-align: center;
+  padding: 3em 2em;
+ }
+ .pros-section h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    color: white;
+  }
+  /* Flex container for cards */
+.pros-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.pro-card {
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+/* Image styling */
+.pro-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+/* Name */
+.pro-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #004080;
+}
+
+/* Description */
+.pro-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+
+  
+  
+
+  
+
+
+  
+  
+  
