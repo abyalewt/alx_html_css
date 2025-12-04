@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* --- 2. Variables & Global Styles --- */
+/* --- 2. Variables & Global Styles used --- */
 :root {
   /* Colors (Using placeholders based on typical design) */
   --color-primary: #ff6565;
