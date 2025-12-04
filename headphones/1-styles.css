@@ -2,190 +2,189 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* --- 2. Variables & Global Styles --- */
 :root {
-    /* Required Primary Color */
-    --color-primary: #FF6565;
-    --color-white: #FFFFFF;
-    --color-dark-bg: #071629;
-    --color-text-light: rgba(255, 255, 255, 0.9);
-    
-    /* NEW: Variables for What We Do Section */
-    --color-section-bg: #FFFFFF; 
-    --color-section-text: #000000;
+  /* Required Primary Color */
+  --color-primary: #ff6565;
+  --color-white: #ffffff;
+  --color-dark-bg: #071629;
+  --color-text-light: rgba(255, 255, 255, 0.9);
 
-    /* Fonts */
-    --font-family-main: 'Source Sans Pro', sans-serif;
-    --font-family-title: 'Spin Cycle OT', sans-serif;
+  /* NEW: Variables for What We Do Section */
+  --color-section-bg: #ffffff;
+  --color-section-text: #000000;
+
+  /* Fonts */
+  --font-family-main: "Source Sans Pro", sans-serif;
+  --font-family-title: "Spin Cycle OT", sans-serif;
 }
 
 body {
-    font-family: var(--font-family-main);
-    color: var(--color-text-light);
-    background-color: var(--color-dark-bg);
+  font-family: var(--font-family-main);
+  color: var(--color-text-light);
+  background-color: var(--color-dark-bg);
 }
 
 /* --- Global Layout: Max Width 1000px Centered --- */
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* --- 3. Header/Hero Styling --- */
 .hero-section {
-    background-image: url("../Resource/images/headphones_hero_1.jpg");
-    background-size: cover;
-    background-position: center;
-    padding-top: 40px;
-    padding-bottom: 200px;
+  background-image: url("../Resource/images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+  padding-bottom: 200px;
 }
 
 /* Navigation Styling */
 .header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
 .logo {
-    height: 30px;
+  height: 30px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    font-size: 14px;
-    text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: var(--color-white);
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: color 0.3s ease;
 }
 
 /* Mobile Menu Setup (Hidden by Default) */
-.menu-btn, .menu-icon {
-    display: none;
+.menu-btn,
+.menu-icon {
+  display: none;
 }
 
 /* Hero Content Styling */
 .hero-content {
-    text-align: center;
-    padding-top: 100px;
+  text-align: center;
+  padding-top: 100px;
 }
 .hero-content h1 {
-    font-size: 32px;
-    font-family: var(--font-family-title);
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 32px;
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .hero-content .subtitle {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 .hero-content .description {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 1.5;
-    opacity: 0.8;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.8;
 }
 
 /* Global Button Styling */
 .button {
-    padding: 12px 30px;
-    border: none;
-    border-radius: 22px;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-bottom: 40px;
-    transition: opacity 0.3s ease, background-color 0.3s ease;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
 /* --- Interactions (Links & Buttons) --- */
 .nav-links a:hover,
 .nav-links a:active {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 .button:hover,
 .button:active {
-    opacity: 0.9;
+  opacity: 0.9;
 }
-
 
 /* ========================================================= */
 /* --- 4. What We Do Section Styling --- */
 /* ========================================================= */
 
 .what-we-do-section {
-    background-color: var(--color-section-bg);
-    color: var(--color-section-text);
-    padding: 100px 0;
-    text-align: center;
+  background-color: var(--color-section-bg);
+  color: var(--color-section-text);
+  padding: 100px 0;
+  text-align: center;
 }
 
 .section-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .section-title strong {
-    color: var(--color-primary);
-    font-weight: 700;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 .section-description {
-    max-width: 700px;
-    margin: 0 auto 80px;
-    line-height: 1.6;
-    font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto 80px;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 /* Desktop Grid Layout (4 columns) */
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 
 .service-item {
-    padding: 20px 10px;
+  padding: 20px 10px;
 }
 
 .service-icon {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
 }
 
 .service-item h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .service-item p {
-    font-size: 14px;
-    line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.5;
 }
-
 
 /* ========================================================= */
 /* --- 5. Responsive Design (Media Queries) --- */
@@ -193,115 +192,120 @@ body {
 
 /* Tablet Responsiveness (1000px down to 481px) */
 @media (max-width: 1000px) {
-    /* Header Adjustments */
-    .container {
-        padding: 0 40px; 
-    }
-    .nav-links {
-        gap: 20px;
-    }
-    .hero-content h1 {
-        font-size: 30px;
-    }
-    
-    /* NEW: Tablet Adjustment for Services Grid (2 columns) */
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 30px;
-    }
-    
-    .section-description {
-        margin-bottom: 60px; /* Slight adjustment */
-    }
+  /* Header Adjustments */
+  .container {
+    padding: 0 40px;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  /* NEW: Tablet Adjustment for Services Grid (2 columns) */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .section-description {
+    margin-bottom: 60px; /* Slight adjustment */
+  }
 }
 
 /* Mobile Responsiveness (480px Breakpoint and below) */
 @media (max-width: 480px) {
-    /* Header Adjustments */
-    .hero-section {
-        padding-bottom: 100px;
-    }
-    .container {
-        padding: 0 15px; 
-    }
+  /* Header Adjustments */
+  .hero-section {
+    padding-bottom: 100px;
+  }
+  .container {
+    padding: 0 15px;
+  }
 
-    /* Mobile Menu Toggle (Showing the icon) */
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        background: var(--color-white); 
-        width: 30px;
-        height: 3px;
-        position: relative;
-        z-index: 10;
-        margin-left: 20px;
-    }
-    .menu-icon::before, .menu-icon::after {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background: var(--color-white);
-        left: 0;
-    }
-    .menu-icon::before { top: -10px; }
-    .menu-icon::after { top: 10px; }
+  /* Mobile Menu Toggle (Showing the icon) */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    background: var(--color-white);
+    width: 30px;
+    height: 3px;
+    position: relative;
+    z-index: 10;
+    margin-left: 20px;
+  }
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: var(--color-white);
+    left: 0;
+  }
+  .menu-icon::before {
+    top: -10px;
+  }
+  .menu-icon::after {
+    top: 10px;
+  }
 
-    /* Mobile Navigation Alignment */
-    .header-nav {
-        justify-content: flex-start; 
-        gap: 20px;
-    }
-    .logo {
-        margin-right: auto;
-    }
-    
-    /* Mobile Navigation Menu (Hidden/Shown by Checkbox) */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: var(--color-dark-bg);
-        text-align: center;
-        padding-top: 80px;
-        z-index: 5;
-    }
-    .nav-links li {
-        margin: 15px 0;
-        font-size: 18px;
-    }
-    .menu-btn:checked ~ .nav-links {
-        display: flex;
-    }
-    
-    /* Hero Content Adjustments */
-    .hero-content h1 {
-        font-size: 24px;
-    }
-    .hero-content .subtitle,
-    .hero-content .description {
-        font-size: 14px;
-    }
-    
-    /* NEW: Mobile Adjustment for Services Grid (1 column) */
-    .services-grid {
-        grid-template-columns: 1fr; 
-        gap: 50px;
-    }
-    
-    .what-we-do-section {
-        padding: 60px 0;
-    }
-    
-    .section-title {
-        font-size: 26px;
-    }
-    
-    .section-description {
-        margin-bottom: 40px;
-    }
+  /* Mobile Navigation Alignment */
+  .header-nav {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .logo {
+    margin-right: auto;
+  }
+
+  /* Mobile Navigation Menu (Hidden/Shown by Checkbox) */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-dark-bg);
+    text-align: center;
+    padding-top: 80px;
+    z-index: 5;
+  }
+  .nav-links li {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+  .menu-btn:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* Hero Content Adjustments */
+  .hero-content h1 {
+    font-size: 24px;
+  }
+  .hero-content .subtitle,
+  .hero-content .description {
+    font-size: 14px;
+  }
+
+  /* NEW: Mobile Adjustment for Services Grid (1 column) */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .what-we-do-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-description {
+    margin-bottom: 40px;
+  }
 }
