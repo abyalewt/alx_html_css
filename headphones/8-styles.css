@@ -1,0 +1,571 @@
+/* --- 1. CSS Reset --- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- 2. Variables & Global Styles --- */
+:root {
+    /* Required Primary Color */
+    --color-primary: #FF6565;
+    --color-white: #FFFFFF;
+    --color-dark-bg: #071629;
+    --color-text-light: rgba(255, 255, 255, 0.9);
+    
+    /* Variables for Sections */
+    --color-section-bg: #FFFFFF; 
+    --color-section-text: #000000;
+
+    /* Fonts */
+    --font-family-main: 'Source Sans Pro', sans-serif;
+    --font-family-title: 'Spin Cycle OT', sans-serif;
+}
+
+body {
+    font-family: var(--font-family-main);
+    color: var(--color-text-light);
+    background-color: var(--color-dark-bg);
+}
+
+/* --- Global Layout: Max Width 1000px Centered --- */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 5px; 
+}
+
+/* --- 3. Header/Hero Styling --- */
+.hero-section {
+    background-image: url("../Resource/images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+
+/* Navigation Styling */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: color 0.3s ease;
+}
+
+/* Mobile Menu Setup (Hidden by Default) */
+.menu-btn, .menu-icon {
+    display: none;
+}
+
+/* Hero Content Styling */
+.hero-content {
+    text-align: center;
+    padding-top: 100px;
+}
+.hero-content h1 {
+    font-size: 32px;
+    font-family: var(--font-family-title);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content .subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.hero-content .description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+/* Global Button Styling */
+.button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 22px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* --- Interactions (Links & Buttons) --- */
+.nav-links a:hover,
+.nav-links a:active {
+    color: var(--color-primary);
+}
+.button:hover,
+.button:active {
+    opacity: 0.9;
+}
+
+
+/* ========================================================= */
+/* --- 4. What We Do Section Styling --- */
+/* ========================================================= */
+
+.what-we-do-section {
+    background-color: var(--color-section-bg);
+    color: var(--color-section-text);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-title strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 0 auto 80px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Desktop Grid Layout (4 columns) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px;
+}
+
+.service-item {
+    padding: 20px 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animation: Scale up on hover */
+.service-item:hover {
+    transform: scale(1.05); 
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.service-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ========================================================= */
+/* --- 5. Our Results Section Styling --- */
+/* ========================================================= */
+
+.results-section {
+    background-color: var(--color-dark-bg); 
+    color: var(--color-white);
+    padding: 100px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Utility class to make text white on the dark background */
+.section-title.white,
+.section-description.white {
+    color: var(--color-white);
+}
+
+.results-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.result-item {
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation: Slightly lift and scale on hover */
+.result-item:hover {
+    transform: translateY(-5px) scale(1.02); 
+    box-shadow: 0 5px 15px rgba(255, 101, 101, 0.4); 
+    cursor: pointer;
+}
+
+/* Pentagon Shape Implementation (Using Image File) */
+.pentagone-bg {
+    width: 150px;
+    height: 150px;
+    
+    background-image: url("../Resource/images/pentagone.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    position: relative;
+    
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Animate the pentagon shape on hover */
+.result-item:hover .pentagone-bg {
+    transform: rotate(5deg); 
+}
+
+.result-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-white);
+    z-index: 2;
+}
+
+.result-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* ========================================================= */
+/* --- 6. Contact Us Section Styling --- */
+/* ========================================================= */
+
+.contact-section {
+    background-color: var(--color-section-bg); 
+    color: var(--color-section-text); 
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Ensure section title is centered */
+.contact-section .section-title {
+    margin-bottom: 50px;
+}
+
+/* Form Layout */
+.contact-form {
+    max-width: 400px; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Field Styling */
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-section-text);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid var(--color-section-text); 
+    background: transparent;
+    font-size: 14px;
+    color: var(--color-section-text);
+    line-height: 1.5; 
+    height: 30px; 
+}
+
+.contact-form textarea {
+    resize: none; 
+    height: 80px; 
+    padding-top: 5px;
+}
+
+/* Input Focus/Interaction */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-bottom: 1px solid var(--color-primary); 
+}
+
+/* Button Positioning */
+.contact-section .button {
+    margin-top: 20px;
+    margin-bottom: 0; 
+    width: 100%; 
+    text-align: center;
+}
+
+
+/* ========================================================= */
+/* --- 7. Footer Section Styling --- */
+/* ========================================================= */
+
+.footer-section {
+    background-color: var(--color-dark-bg);
+    color: var(--color-white);
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* DESKTOP/TABLET: Logo Left, Social Icons Right */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: 30px;
+}
+
+.copyright {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+
+/* ========================================================= */
+/* --- 8. Responsive Design (Media Queries) --- */
+/* ========================================================= */
+
+/* Tablet Responsiveness (1000px down to 481px) */
+@media (max-width: 1000px) {
+    /* Header Adjustments */
+    .container {
+        padding: 0 40px; 
+    }
+    .nav-links {
+        gap: 20px;
+    }
+    .hero-content h1 {
+        font-size: 30px;
+    }
+    
+    /* What We Do Grid Adjustment (2 columns) */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px;
+    }
+    .section-description {
+        margin-bottom: 60px;
+    }
+    
+    /* Results Adjustments */
+    .results-grid {
+        max-width: 600px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    /* Footer Adjustment (Explicitly setting padding/layout for this state) */
+    .footer-section {
+        padding: 40px;
+    }
+}
+
+/* Mobile Responsiveness (480px Breakpoint and below) */
+@media (max-width: 480px) {
+    /* Header Adjustments */
+    .hero-section {
+        padding-bottom: 100px;
+    }
+    .container {
+        padding: 0 15px; 
+    }
+
+    /* Mobile Menu Toggle (Showing the icon) */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        background: var(--color-white); 
+        width: 30px;
+        height: 3px;
+        position: relative;
+        z-index: 10;
+        margin-left: 20px;
+    }
+    .menu-icon::before, .menu-icon::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: var(--color-white);
+        left: 0;
+    }
+    .menu-icon::before { top: -10px; }
+    .menu-icon::after { top: 10px; }
+
+    /* Mobile Navigation Alignment */
+    .header-nav {
+        justify-content: flex-start; 
+        gap: 20px;
+    }
+    .logo {
+        margin-right: auto;
+    }
+    
+    /* Mobile Navigation Menu (Hidden by Default) */
+    .nav-links {
+        /* Set opacity to 0 and position off-screen initially */
+        display: flex; /* Must be flex so it can stack */
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--color-dark-bg);
+        text-align: center;
+        padding-top: 80px;
+        z-index: 5;
+        
+        /* 💡 Key for animation: Start menu hidden and transition properties */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%); 
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+    }
+    
+    /* 🔑 JavaScript Toggled Class: Menu OPEN state */
+    .nav-links.menu-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0); /* Slides into view */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Remove delay when opening */
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+    
+    /* REMOVE OLD CHECKBOX HACK: 
+    .menu-btn:checked ~ .nav-links { display: flex; } 
+    */
+    
+    /* Hero Content Adjustments */
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    .hero-content .subtitle,
+    .hero-content .description {
+        font-size: 14px;
+    }
+    
+    /* What We Do Mobile Adjustment (1 column) */
+    .services-grid {
+        grid-template-columns: 1fr; 
+        gap: 50px;
+    }
+    .what-we-do-section {
+        padding: 60px 0;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+    .section-description {
+        margin-bottom: 40px;
+    }
+    
+    /* Results Adjustments */
+    .results-section {
+        padding: 60px 0;
+    }
+    .results-grid {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    .result-item {
+        width: 100%;
+    }
+
+    /* Contact Form Adjustments */
+    .contact-section {
+        padding: 60px 0;
+    }
+    .contact-form {
+        max-width: 100%;
+        padding: 0 15px; 
+    }
+    .contact-section .button {
+        width: auto;
+        display: block;
+        margin: 20px auto 0; 
+    }
+    
+    /* Footer Adjustments (Stacks logo/social icons) */
+    .footer-section {
+        padding: 30px 0;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 0;
+    }
+    .copyright {
+        margin-top: 30px;
+    }
+}
