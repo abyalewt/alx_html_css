@@ -15,7 +15,7 @@
     --color-dark-bg: #071629;
     --color-text-light: rgba(255, 255, 255, 0.9);
     
-    /* NEW: Variables for What We Do Section */
+    /* Variables for Sections */
     --color-section-bg: #FFFFFF; 
     --color-section-text: #000000;
 
@@ -34,7 +34,7 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5px; 
 }
 
 /* --- 3. Header/Hero Styling --- */
@@ -188,7 +188,73 @@ body {
 
 
 /* ========================================================= */
-/* --- 5. Responsive Design (Media Queries) --- */
+/* --- 5. Our Results Section Styling --- */
+/* ========================================================= */
+
+.results-section {
+    /* Background is dark, matching the hero section */
+    background-color: var(--color-dark-bg); 
+    color: var(--color-white);
+    padding: 100px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Utility class to make text white on the dark background */
+.section-title.white,
+.section-description.white {
+    color: var(--color-white);
+}
+
+.results-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.result-item {
+    text-align: center;
+    width: 200px;
+}
+
+/* Pentagon Shape Implementation (Using Image File) */
+.pentagone-bg {
+    width: 170px;
+    height: 160px;
+    
+    /* Load the image file for the pentagon shape */
+    background-image: url("../Resource/images/pentagone.png"); 
+    background-size: cover; /* Ensures the image fills the container */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.result-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-white);
+    z-index: 2;
+}
+
+.result-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* ========================================================= */
+/* --- 6. Responsive Design (Media Queries) --- */
 /* ========================================================= */
 
 /* Tablet Responsiveness (1000px down to 481px) */
@@ -204,14 +270,21 @@ body {
         font-size: 30px;
     }
     
-    /* NEW: Tablet Adjustment for Services Grid (2 columns) */
+    /* What We Do Grid Adjustment (2 columns) */
     .services-grid {
         grid-template-columns: repeat(2, 1fr); 
         gap: 30px;
     }
-    
     .section-description {
-        margin-bottom: 60px; /* Slight adjustment */
+        margin-bottom: 60px;
+    }
+    
+    /* Results Adjustments */
+    .results-grid {
+        /* Centers the 2x2 grid */
+        max-width: 600px;
+        margin: 0 auto;
+        justify-content: space-between;
     }
 }
 
@@ -287,21 +360,32 @@ body {
         font-size: 14px;
     }
     
-    /* NEW: Mobile Adjustment for Services Grid (1 column) */
+    /* What We Do Mobile Adjustment (1 column) */
     .services-grid {
         grid-template-columns: 1fr; 
         gap: 50px;
     }
-    
     .what-we-do-section {
         padding: 60px 0;
     }
-    
     .section-title {
         font-size: 26px;
     }
-    
     .section-description {
         margin-bottom: 40px;
+    }
+    
+    /* Results Adjustments */
+    .results-section {
+        padding: 60px 0;
+    }
+    .results-grid {
+        /* Stack vertically on mobile */
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    .result-item {
+        width: 100%;
     }
 }
