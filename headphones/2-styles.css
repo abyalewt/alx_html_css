@@ -226,7 +226,7 @@ body {
     width: 170px;
     height: 160px;
     
-    /* Load the image file for the pentagon shape */
+    /* Load the images file for the pentagon shape */
     background-image: url("../Resource/images/pentagone.png"); 
     background-size: cover; /* Ensures the image fills the container */
     background-repeat: no-repeat;
